@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLNB LAB coffee"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>
+    <img class ="imgname" src="img/name.png">
+</h1>
+
+<div class="menu">
+    <ul>
+        <li class ="first">
+            <p>Latte</p>
+            <img class = "coffeimg" src="img/latte.png" alt="">
+            <button class="orderBtn" data-item="Latte">Order</button>
+        </li>
+        <li class ="second">
+            <p>Cappucino</p>
+            <img class = "coffeimg" src="img/cappucinp.png" alt="">
+            <button class="orderBtn" data-item="Cappucino">Order</button>
+        </li>
+        <li class ="third">
+            <p>Raff</p>
+            <img class = "coffeimg" src="img/raff.png" alt="">
+            <button class="orderBtn" data-item="Raff">Order</button>
+        </li>
+    </ul>
+</div>
+
+<div class="comments">
+    <h2>Comments</h2>
+    <label for="commentBox"></label><textarea id="commentBox" placeholder="Your comment"></textarea>
+    <button id="addCommentBtn">Add comment</button>
+    <ul id="commentList">
+        <!-- Коментарі будуть тут -->
+    </ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

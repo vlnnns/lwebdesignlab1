@@ -1,0 +1,152 @@
+/* styles.css */
+
+body {
+    font-family: "Century Gothic", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/4.jpg");
+    background-repeat: repeat;
+}
+
+h1 {
+    text-align: center;
+    color: #eaeaea;
+    margin-bottom: 0;
+
+}
+.imgname{
+    width: 450px;
+    height: 100px;
+}
+
+
+.menu {
+    margin-top:0;
+    text-align: center;
+    margin-bottom:80px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 430px;
+    padding: 10px;
+    margin: 10px;
+}
+.coffeimg{
+    margin-top:30px;
+    width:200px;
+    height:180px;
+    transition: transform 0.3s;
+}
+.coffeimg:hover{
+    transform: scale(1.2);
+}
+
+.first{
+    background-image: url("img/iOS 16.jpg");
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.first:hover{
+    transform: scale(1.1);
+}
+.second{
+    background-image: url("img/7.jpg");
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.second:hover{
+    transform: scale(1.1);
+}
+
+.third{
+    background-image: url("img/3.jpg");
+    transition: transform 0.3s;
+    cursor: pointer;
+   }
+.third:hover{
+    transform: scale(1.1);
+}
+.menu p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.orderBtn {
+    margin-top:20px;
+    width:140px;
+    height: 45px;
+    background-color: #b5daff;
+    font-size:16px;
+    color: #282828;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.orderBtn:hover {
+    background-color: #e6b5ff;
+}
+
+.comments {
+    background-image: url("img/9.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.comments h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+#commentBox {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+
+    margin-bottom: 10px;
+}
+
+#addCommentBtn {
+    background-color: rgba(46, 78, 93, 0.87);
+    border-radius: 8px;
+    font-weight: bolder;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addCommentBtn:hover {
+    background-color: rgba(46, 78, 93, 0.87);
+}
+
+#commentList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#commentList li {
+    margin-bottom: 5px;
+}
