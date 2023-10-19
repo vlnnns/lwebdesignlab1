@@ -46,3 +46,40 @@ orderButtons.forEach(button => {
 });
 
 addCommentBtn.addEventListener('click', addComment);
+
+const form = document.getElementById("myForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const nameError = document.getElementById("nameError");
+const emailError = document.getElementById("emailError");
+
+// Define event handlers
+function validateName() {
+    if (nameInput.value.trim() === "") {
+        nameError.textContent = "Name is required";
+    } else {
+        nameError.textContent = "";
+    }
+}
+
+function validateEmail() {
+    if (!/^\S+@\S+\.\S+$/.test(emailInput.value)) {
+        emailError.textContent = "Invalid email address";
+    } else {
+        emailError.textContent = "";
+    }
+}
+
+function handleSubmit(event) {
+    validateName();
+    validateEmail();
+
+    if (nameError.textContent || emailError.textContent) {
+        event.preventDefault(); // Prevent form submission if there are errors
+    }
+}
+
+// Add event listeners
+nameInput.addEventListener("input", validateName);
+emailInput.addEventListener("input", validateEmail);
+form.addEventListener("submit", handleSubmit);
